@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -16,6 +16,10 @@ type QuizScreenProps = {
 
 export function QuizScreen({ question, onAnswer, progress }: QuizScreenProps) {
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
+
+  useEffect(() => {
+    setSelectedAnswer(null);
+  }, [question]);
 
   const handleSelectAnswer = (answer: string) => {
     setSelectedAnswer(answer);
