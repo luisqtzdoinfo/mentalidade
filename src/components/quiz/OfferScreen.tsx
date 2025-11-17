@@ -60,7 +60,7 @@ export function OfferScreen() {
         asChild
         className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-full text-base md:text-xl font-bold px-8 md:px-12 py-6 md:py-8 group animate-pulse text-center"
       >
-        <a href="#">
+        <a href="https://pay.cakto.com.br/gizrfup_654479">
           Quero Minha Transformação Agora
           <ArrowRight className="ml-2 h-5 w-5 md:h-6 md:w-6 transition-transform group-hover:translate-x-1" />
         </a>
