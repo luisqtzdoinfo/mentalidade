@@ -1,3 +1,10 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "ebook-cover",
+      "description": "Cover for the Mentalidade de Aço ebook",
+      "imageUrl": "https://images.unsplash.com/photo-1760443728294-81b19787ec4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlYm9vayUyMGNvdmVyfGVufDB8fHx8MTc2MzMwNjExNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ebook cover"
+    }
+  ]
 }
