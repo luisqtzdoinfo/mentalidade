@@ -11,6 +11,7 @@ import { getQuizResults } from "@/app/actions";
 import { useToast } from "@/hooks/use-toast";
 import type { QuizOutputType } from "@/ai/flows/personalized-quiz-results";
 import { Loader2 } from "lucide-react";
+import { Toaster } from "@/components/ui/toaster";
 
 type Step = "welcome" | "quiz" | "loading" | "results" | "offer";
 
@@ -96,6 +97,7 @@ export default function QuizFlow() {
     <div className="w-full">
       {showConfetti && <Confetti />}
       {renderStep()}
+      <Toaster />
     </div>
   );
 }
