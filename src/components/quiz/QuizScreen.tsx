@@ -23,13 +23,13 @@ export function QuizScreen({ question, onAnswer, progress }: QuizScreenProps) {
 
   const handleSelectAnswer = (answer: string) => {
     setSelectedAnswer(answer);
-    onAnswer(answer);
+    setTimeout(() => onAnswer(answer), 300);
   };
 
   return (
-    <Card key={question.id} className="w-full max-w-3xl mx-auto shadow-2xl border-2 border-primary/10 animate-in fade-in-50 slide-in-from-bottom-10 duration-500">
+    <Card key={question.id} className="w-full max-w-3xl mx-auto shadow-2xl border-2 border-primary/10 bg-card animate-in fade-in-50 slide-in-from-bottom-10 duration-500">
       <CardHeader className="p-4 md:p-6">
-        <Progress value={progress} className="w-full h-2" />
+        <Progress value={progress} className="w-full h-2 bg-muted" />
         <p className="text-sm text-muted-foreground text-center pt-3">
           Pergunta {question.id} de {quizQuestions.length}
         </p>
@@ -45,9 +45,9 @@ export function QuizScreen({ question, onAnswer, progress }: QuizScreenProps) {
               variant="outline"
               size="lg"
               className={cn(
-                "justify-start text-left h-auto py-4 px-5 text-base whitespace-normal border-2 hover:border-accent hover:bg-accent/10 focus:bg-accent/20 focus:border-accent transition-all duration-300",
+                "justify-start text-left h-auto py-4 px-5 text-base whitespace-normal border-2 bg-background/20 border-border hover:border-accent hover:bg-accent/10 focus:bg-accent/20 focus:border-accent transition-all duration-300",
                 selectedAnswer === answer && "bg-accent text-accent-foreground border-accent hover:bg-accent hover:text-accent-foreground",
-                selectedAnswer && selectedAnswer !== answer && "opacity-50"
+                selectedAnswer && selectedAnswer !== answer && "opacity-30"
               )}
               onClick={() => handleSelectAnswer(answer)}
               disabled={!!selectedAnswer}

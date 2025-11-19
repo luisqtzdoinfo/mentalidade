@@ -45,7 +45,7 @@ export function OfferScreen() {
                 alt={ebookCover.description}
                 width={300}
                 height={450}
-                className="rounded-lg shadow-2xl mx-auto w-[200px] h-auto md:w-[300px]"
+                className="rounded-lg shadow-2xl mx-auto w-[200px] h-auto md:w-[300px] grayscale"
                 data-ai-hint={ebookCover.imageHint}
               />
           )}
@@ -71,7 +71,7 @@ export function OfferScreen() {
         </div>
       </div>
       
-      <div className="w-full max-w-3xl space-y-8 text-left my-8 rounded-lg border border-primary/20 p-6 bg-card">
+      <div className="w-full max-w-3xl space-y-8 text-left my-8 rounded-lg border border-border p-6 bg-card">
         <div>
             <h3 className="flex items-center gap-2 text-xl font-bold text-foreground mb-4">
                 <Flame className="h-6 w-6 text-accent" />
@@ -117,7 +117,7 @@ export function OfferScreen() {
       <Button
         size="lg"
         asChild
-        className="w-full max-w-md bg-accent text-accent-foreground hover:bg-accent/90 rounded-full text-lg font-bold px-8 py-7 group animate-pulse text-center"
+        className="w-full max-w-md bg-foreground text-background hover:bg-foreground/90 rounded-full text-lg font-bold px-8 py-7 group animate-pulse text-center"
       >
         <a href="https://pay.cakto.com.br/gizrfup_654479">
           DESTRAVAR MINHA MENTE AGORA

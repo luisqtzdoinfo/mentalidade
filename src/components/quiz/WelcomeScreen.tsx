@@ -18,7 +18,7 @@ export function WelcomeScreen({ onStart }: WelcomeScreenProps) {
       <Button
         size="lg"
         onClick={onStart}
-        className="w-full max-w-xs md:w-auto bg-accent text-accent-foreground hover:bg-accent/90 rounded-full text-lg font-bold px-8 py-6 group"
+        className="w-full max-w-xs md:max-w-md bg-foreground text-background hover:bg-foreground/90 rounded-full text-lg font-bold px-8 py-7 group"
       >
         Começar Meu Teste
         <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
