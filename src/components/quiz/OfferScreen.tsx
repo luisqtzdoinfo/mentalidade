@@ -117,7 +117,7 @@ export function OfferScreen() {
       <Button
         size="lg"
         asChild
-        className="w-full max-w-md bg-foreground text-background hover:bg-foreground/90 rounded-full text-lg font-bold px-8 py-7 group animate-pulse text-center"
+        className="w-full max-w-md bg-foreground text-background hover:bg-foreground/90 rounded-full text-base md:text-lg font-bold px-6 md:px-8 py-7 group animate-pulse text-center"
       >
         <a href="https://pay.cakto.com.br/gizrfup_654479">
           DESTRAVAR MINHA MENTE AGORA
