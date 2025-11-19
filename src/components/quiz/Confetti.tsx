@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 
-const NUM_CONFETTI = 150;
+const NUM_CONFETTI = 50; // Reduced for a more subtle effect
 
 const Confetti = () => {
   const [pieces, setPieces] = useState<React.ReactElement[]>([]);
@@ -11,9 +11,9 @@ const Confetti = () => {
     const newPieces = Array.from({ length: NUM_CONFETTI }).map((_, index) => {
       const style: React.CSSProperties = {
         left: `${Math.random() * 100}%`,
-        animationDuration: `${Math.random() * 3 + 2}s`,
-        animationDelay: `${Math.random() * 0.5}s`,
-        backgroundColor: `hsl(45, 100%, ${Math.random() * 25 + 60}%)`,
+        animationDuration: `${Math.random() * 4 + 3}s`, // Slower animation
+        animationDelay: `${Math.random() * 1}s`, // Slightly more delay variance
+        backgroundColor: `hsl(45, 70%, 60%)`, // Matte/metallic gold
         transform: `rotate(${Math.random() * 360}deg)`,
       };
       return <div key={index} className="confetti-piece" style={style} />;
@@ -27,12 +27,12 @@ const Confetti = () => {
         {`
         .confetti-piece {
           position: absolute;
-          width: 8px;
-          height: 12px;
+          width: 6px; /* Smaller particles */
+          height: 10px; /* Smaller particles */
           top: -20px;
           opacity: 0;
           animation-name: drop;
-          animation-timing-function: linear;
+          animation-timing-function: ease-in-out; /* Smoother movement */
           animation-iteration-count: 1;
           animation-fill-mode: forwards;
         }
