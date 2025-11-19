@@ -38,7 +38,7 @@ export function ResultsScreen({ results, onNext }: ResultsScreenProps) {
         </p>
       </CardContent>
       <CardFooter className="flex justify-center p-4 md:p-8">
-        <Button size="lg" onClick={onNext} className="w-full max-w-md bg-foreground text-background hover:bg-foreground/90 rounded-full text-base font-bold px-4 md:px-8 py-7 group text-center">
+        <Button size="lg" onClick={onNext} className="w-full max-w-md bg-foreground text-background hover:bg-foreground/90 rounded-full text-sm md:text-base font-bold px-4 md:px-8 py-6 md:py-7 group text-center">
           {results.cta}
           <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
         </Button>
