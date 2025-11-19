@@ -13,7 +13,7 @@ const Confetti = () => {
         left: `${Math.random() * 100}%`,
         animationDuration: `${Math.random() * 3 + 2}s`,
         animationDelay: `${Math.random() * 0.5}s`,
-        backgroundColor: `hsl(182, 100%, ${Math.random() * 20 + 65}%)`,
+        backgroundColor: `hsl(45, 100%, ${Math.random() * 25 + 60}%)`,
         transform: `rotate(${Math.random() * 360}deg)`,
       };
       return <div key={index} className="confetti-piece" style={style} />;
